@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="La Paz Street Juice — Jugos frescos con frutas del día, sabor paceño al paso.">
+  <link rel="stylesheet" href="assents/css/style.css">
+  <title>La Paz Street Juice</title>
+</head>
+
+<body>
+
+  <!-- ── Redes flotantes ─────────────────────────── -->
+  <div class="contenedor-redes-flotantes" aria-label="Redes sociales">
+    <a href="https://www.facebook.com/share/1DBh7iKDGX/" target="_blank" rel="noopener" class="boton-social-flotante fb-flotante" title="Facebook" aria-label="Facebook">
+      <svg viewBox="0 0 24 24" class="svg-logo" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" fill="#fff"/></svg>
+    </a>
+    <a href="https://www.instagram.com/lapazstreetjuice?igsh=dW4wMnNrYTloYzY2" target="_blank" rel="noopener" class="boton-social-flotante ig-flotante" title="Instagram" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" class="svg-logo" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" fill="#fff"/></svg>
+    </a>
+    <a href="https://www.tiktok.com/@la.paz.street.jui?_r=1&_t=ZS-96pcHY3TqKa" target="_blank" rel="noopener" class="boton-social-flotante tk-flotante" title="TikTok" aria-label="TikTok">
+      <svg viewBox="0 0 24 24" class="svg-logo" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.02 1.59 4.23.93.17 1.87.3 2.82.35v3.91c-1.24-.02-2.48-.28-3.64-.73-.32-.12-.63-.27-.93-.44V14.8c-.02 2.39-1.39 4.61-3.54 5.66-2.14 1.06-4.73.71-6.53-.88-2.43-2.16-2.68-5.89-.55-8.36 1.57-1.84 4.04-2.58 6.31-1.92v3.95c-1.14-.42-2.42-.11-3.25.74-.91.93-.94 2.44-.06 3.4 1 1.08 2.76 1.11 3.8.06.49-.49.|175-1.16.75-1.85V.02z" fill="#fff"/></svg>
+    </a>
+    <a href="https://wa.me/59172541194?text=Hola!%20Quiero%20pedir%20un%20jugo%20de%20La%20Paz%20Street%20Juice" target="_blank" rel="noopener" class="boton-social-flotante wa-flotante" title="WhatsApp" aria-label="WhatsApp">
+      <svg viewBox="0 0 32 32" class="svg-logo" aria-hidden="true"><path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825.733 5.476 2.014 7.784l-2.014 7.358 7.531-1.975c2.203 1.203 4.73 1.895 7.423 1.895 8.837 0 16-7.163 16-16s-7.163-16-16-16zm8.211 21.926c-.336.95-1.642 1.841-2.654 2.11-.692.182-1.597.324-4.634-.942-3.882-1.618-6.381-5.584-6.574-5.842-.194-.257-1.54-2.049-1.54-3.905 0-1.855.973-2.768 1.321-3.131.347-.364.754-.455 1.007-.455.252 0 .505.003.722.013.232.01.539-.039.84.693.308.747 1.054 2.571 1.146 2.76.092.189.154.409.028.663-.126.253-.189.41-.378.63-.189.222-.397.494-.567.663-.189.189-.387.395-.167.773.22.378.979 1.617 2.1 2.617 1.442 1.29 2.658 1.688 3.036 1.878.378.189.599.158.821-.09
+        4.222-.253.946-1.102 1.198-1.48.252-.378.505-.316.852-.189.348.127 2.21 1.042 2.589 1.232.379.19.63.284.724.442.095.16.095.918-.24 1.868z" fill="#fff"/></svg>
+    </a>
+  </div>
+
+  <!-- ── Header ──────────────────────────────────── -->
+  <header class="header-container">
+    <div class="logo">
+      <span class="la-paz-brush">LA PAZ</span><br>
+      <span class="street-brush">STREET JUICE</span>
+    </div>
+    <nav class="menu" aria-label="Navegación principal">
+      <a href="#">INICIO</a>
+       <a href="#productos">PRODUCTOS</a>
+      <a href="#nosotros">NOSOTROS</a>
+      <a href="#testimonios">RESEÑAS</a>
+      <a href="#preguntas">PREGUNTAS</a>
+           <a href="#ubicacion">UBICACIÓN</a>
+      <a href="#contacto">CONTACTO</a>
+       <a href="#" onclick="abrirPedido()">Delivery
+
+       </a>
+    </nav>
+    <button id="theme-toggle" aria-label="Cambiar modo claro/oscuro">🌙</button>
+  </header>
+
+  <!-- ── Hero ───────────────────────────────────── -->s
+  <section class="hero">
+    <div class="hero-text">
+      <h1 class="titulo">
+        <span class="la-paz-brush">LA PAZ</span><br>
+        <span class="street-brush">STREET JUICE</span>
+      </h1>
+      <div class="underline-thin"></div>
+      <p class="slogan">FRESCURA QUE<br>SE DISFRUTA<br>AL PASO</p>
+      <button class="btn-solid" onclick="document.getElementById('productos').scrollIntoView({behasvior:'smooth'})">VER PRODUCTOS</button>
+    </div>
+    <div class="hero-image-container">
+      <img src="assents/img/logo.jpeg" alt="La Paz Street Juice — Jugos frescos">
+    </div>
+  </section>
+
+  <!-- ── Productos ──────────────────────────────── -->
+  <section id="productos" class="menu-productos">
+    <h2 class="titulo-menu">NUESTROS PRODUCTOS</h2>
+    <div class="grid-productos">
+      <div class="card">
+        <img src="assents/img/jl.png" alt="Jugo con Leche" class="img-producto">
+        <h3>JUGO CON LECHE</h3>
+        <p>Frescura natural.</p>
+        <span class="precio precio-neon">20 Bs</span>
+      </div>
+      <div class="card">
+        <img src="assents/img/jugohielo.png" alt="Jugos con Hielo" class="img-producto">
+        <h3>JUGOS CON HIELO</h3>
+        <p>El sabor tradicional paceño al paso.</p>
+        <span class="precio precio-neon">15 Bs</span>
+      </div>
+      <div class="card">
+        <img src="assents/img/jss.jpg" alt="Jugos sin Hielo" class="img-producto">
+        <h3>JUGOS SIN HIELO</h3>
+        <p>Frescura paceña.</p>
+        <span class="precio precio-neon">10 Bs</span>
+      </div>
+    </div>
+  </section>
+<!-- PEDIDOS ONLINE -->
+
+
+
+  <!-- ── Galería ────────────────────────────────── -->
+  <section class="galeria">
+    <h2 class="titulo-menu">GALERÍA</h2>
+    <div class="grid-galeria">
+      <img src="assents/img/foto1.jpg" alt="La Paz Street Juice — foto 1">
+      <img src="assents/img/foto2.jpg" alt="La Paz Street Juice — foto 2">
+      <img src="assents/img/foto3.jpg" alt="La Paz Street Juice — foto 3">
+       <img src="assents/img/foto4.png" alt="La Paz Street Juice — foto 4">
+        <img src="assents/img/foto5.png" alt="La Paz Street Juice — foto 5">
+         <img src="assents/img/foto6.png" alt="La Paz Street Juice — foto 6">
+    </div>
+  </section>
+  <!-- ── Nosotros ───────────────────────────────── -->
+  <section id="nosotros" class="seccion-nosotros">
+    <div class="nosotros-contenido">
+      <h2 class="titulo-menu">NOSOTROS</h2>
+      <div class="underline-thin" style="margin: 0 auto 30px auto;"></div>
+      <p class="nosotros-texto">
+        Llevamos el auténtico sabor tradicional paceño a las calles.
+        Preparamos nuestros jugos al paso con frutas frescas seleccionadas,
+        manteniendo la esencia y la energía que necesitas para tu día a día en la ciudad de La Paz.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Testimonios ────────────────────────────── -->
+  <section id="testimonios" class="seccion-testimonios">
+    <h2 class="titulo-menu">LO QUE DICE LA GENTE</h2>
+    <div class="grid-testimonios">
+      <div class="card-testimonio">
+        <p class="comentario">El jugo con leche bien frío a media mañana te salva el día. Fruta súper fresca y buena atención.</p>
+        <span class="autor">⭐ Alejandro M.</span>
+      </div>
+      <div class="card-testimonio">
+        <p class="comentario">El sabor paceño de verdad, al paso mientras vas al laburo. El de con hielo es una joya.</p>
+        <span class="autor">⭐ Valeria R.</span>
+      </div>
+      <div class="card-testimonio">
+        <p class="comentario">Genial que ahora acepten QR, pido mis jugos para la oficina al tiro por WhatsApp.</p>
+        <span class="autor">⭐ Carlos T.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Preguntas ──────────────────────────────── -->
+  <section id="preguntas" class="seccion-preguntas">
+    <h2 class="titulo-menu">PREGUNTAS FRECUENTES</h2>
+    <div class="preguntas-container">
+      <div class="faq-item">
+        <h4>¿Se puede pagar con QR?</h4>
+        <p>¡Claro que sí, Aceptamos pago simple por QR para que pidas tu jugo al paso sin preocuparte por el suelto.</p>
+      </div>
+      <div class="faq-item">
+        <h4>¿Hacen delivery u órdenes grandes?</h4>
+        <p>Sí, preparamos pedidos grandes para oficinas, eventos o grupos. Escríbenos al WhatsApp con anticipación y te lo tenemos listo.</p>
+      </div>
+      <div class="faq-item">
+        <h4>¿Qué frutas utilizan?</h4>
+        <p>Usamos fruta fresca del día traída directamente de los mercados locales de La Paz para garantizar el sabor tradicional.</p>
+      </div>
+    </div>
+  </section>
+
+<!-- ── Ubicación ───────────────────────────────── -->
+<section id="ubicacion" class="seccion-ubicacion">
+    <h2 class="titulo-menu">UBICACIÓN</h2>
+
+    <p class="texto-ubicacion">
+          Encuéntranos en la  Calle Colón esq. Av. Mariscal Santa Cruz (Prado), en plena esquina, carril de subida. ¡Ven y disfruta de los mejores jugos frescos preparados al instante!
+    </p>
+
+    <div class="mapa-container">
+
+        <div class="info-mapa">
+            <h3>📍 La Paz Street Juice</h3>
+            <p>Encuéntranos y disfruta los mejores jugos frescos preparados al instante.</p>
+        </div>
+   <iframe
+    src="https://www.google.com/maps?q=-16.4995842,-68.1345749&z=18&output=embed"
+    width="100%"
+    height="350"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy">
+</iframe>
+
+    </div>
+</section>
+
+  <!-- ── Contacto ───────────────────────────────── -->
+  <section id="contacto" class="seccion-contacto">
+    <h2 class="titulo-menu">¿DÓNDE ENCONTRARNOS?</h2>
+    <div id="estado-horario" class="estado-horario"></div>
+    <div class="contacto-grid">
+      <div class="card-contacto">
+        <h3>📍 La Paz Street Juice</h3>
+    <p>Encuéntranos en la Calle Colón esq. Av. Mariscal Santa Cruz (Prado), en plena esquina, carril de subida. ¡Ven y disfruta de los mejores jugos frescos preparados al instante!</p>
+        <div class="linea-decorativa"></div>
+<h3>HORARIOS</h3>
+
+<div class="estado-negocio">
+    <span class="punto"></span>
+    <span id="textoEstado">ABIERTO</span>
+</div>
+
+<p>⏰ Lunes a Sábado: 08:00 AM - 06:00 PM</p>
+<p>⏰ Domingos: 09:00 AM - 02:00 PM</p>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      <div class="card-contacto whatsapp-highlight">
+        <h3>¡HAZ TU PEDIDO!</h3>
+        <p>¿Quieres asegurar tus jugos al paso para la oficina o el grupo? Escríbenos directamente.</p>
+        <button class="btn-solid btn-wa" onclick="window.open('https://wa.me/59172541194?text=Hola!%20Quiero%20pedir%20un%20jugo%20de%20La%20Paz%20Street%20Juice','_blank')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Botón flotante pedir ───────────────────── -->
+  <a href="https://wa.me/59172541194" class="pedido-flotante" target="_blank" rel="noopener" aria-label="Pedir por WhatsApp">
+    🧃 PEDIR AHORA
+  </a>
+
+  <!-- ── Footer ────────────────────────────────── -->
+  <footer class="footer-redes">
+    <p id="contador-visitas"></p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/lapazstreetjuice?igsh=dW4wMnNrYTloYzY2" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/share/1DBh7iKDGX/" target="_blank" rel="noopener">Facebook</a>  |°
+      <a href="https://www.tiktok.com/@la.paz.street.jui?_r=1&_t=ZS-96pcHY3TqKa" target="_blank" rel="noopener">TikTok</a>
+    </div>
+  </footer>
+  <!-- MODAL PEDIDOS -->
+
+<div id="modalPedido" class="modal-pedido">
+
+<div class="contenido-modal">
+
+<span class="cerrar-modal" onclick="cerrarPedido()">
+✖
+</span>
+
+<h2 class="titulo-menu">
+CREA TU JUGO
+</h2>
+
+<p class="texto-pedido">
+Selecciona hasta 3 frutas
+</p>
+
+<div class="selector-frutas">
+
+  <div class="fruta-card" data-nombre="Frutilla">
+    🍓
+    <span>Frutilla</span>
+  </div>
+
+  <div class="fruta-card" data-nombre="Banano">
+    🍌
+    <span>Banano</span>
+  </div>
+
+  <div class="fruta-card" data-nombre="Mango">
+    🥭
+    <span>Mango</span>
+  </div>
+
+  <div class="fruta-card" data-nombre="Piña">
+    🍍
+    <span>Piña</span>
+  </div>
+
+  <div class="fruta-card" data-nombre="Sandía">
+    🍉
+    <span>Sandía</span>
+  </div>
+
+  <div class="fruta-card" data-nombre="Uva">
+    🍇
+    <span>Uva</span>
+  </div>
+
+  <div class="fruta-card" data-nombre="Naranja">
+    🍊
+    <span>Naranja</span>  </div>
+
+  <div class="fruta-card" data-nombre="Manzana">
+    🍎
+    <span>Manzana</span>
+  </div>
+
+  <div class="fruta-card" data-nombre="Kiwi">
+    🥝
+    <span>Kiwi</span>
+  </div>
+
+  <div class="fruta-card" data-nombre="Durazno">
+    🍑
+    <span>Durazno</span>
+  </div>
+
+  <div class="fruta-card" data-nombre="Pera">
+    🍐
+    <span>Pera</span>
+  </div>
+
+</div>
+
+<div class="opciones">
+
+<h3>Base</h3>
+
+
+
+<div class="grupo-opciones">
+
+<button class="opcion">
+🥛 Con leche
+</button>
+
+<button class="opcion">
+🥛 Sin leche
+</button>
+</div>
+
+<h3>Temperatura</h3>
+
+<div class="grupo-opciones">
+
+<button class="opcion">
+🧊 Con hielo
+</button>
+
+<button class="opcion">
+🌡️ Sin hielo
+</button>
+
+</div>
+
+</div>
+
+<br>
+
+<div class="formulario">
+
+  <div class="input-box">
+    <input type="text" id="nombreCliente" placeholder="👤 Tu nombre">
+  </div>
+
+  <div class="input-box">
+    <input type="text" id="telefonoCliente" placeholder="📞 Tu celular">
+  </div>
+
+  <div class="input-box">
+    <input type="text" id="direccionCliente" placeholder=" Dirección o referencia">
+  </div>
+
+</div>
+<br><br>
+
+<button class="btn-solid" onclick="enviarUbicacion()">
+🗺️ VER MI UBICACIÓN
+</button>
+
+<br><br>
+
+<p id="precioEstimado" class="precio-estimado">
+💰 Precio estimado: 0 Bs
+</p>
+
+<button class="btn-solid" onclick="hacerPedido()">
+💳 PAGAR AHORA
+</button>
+
+<div class="qr-premium" id="qrPremium" style="display:none;">s
+
+<h3>💳 Escanea y paga</h3>
+
+<img src="assents/img/qr.jpeg" alt="QR">
+
+<br><br>
+
+<p style="text-align:center;color:#ffcc00;">
+⚠️ Tu pedido solo será preparado después de enviar el comprobante de pago
+</p>
+
+<p style="text-align:center;color:#00ff99;">
+🟢 Pedido será confirmado manualmente por el negocio
+</p>
+
+<br>
+
+<button class="btn-solid" onclick="confirmarPedido()">
+📲 ENVIAR PEDIDO A WHATSAPP
+</button>
+</div>
+
+</div>
+
+</div>
+
+<script src="assents/js/script.js"></script>
+
+</body>
+</html>
