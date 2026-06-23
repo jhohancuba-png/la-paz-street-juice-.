@@ -349,3 +349,22 @@ document.addEventListener("DOMContentLoaded", estadoNegocio);
 
 // actualización automática cada 1 minuto
 setInterval(estadoNegocio, 60000);
+function toggleOrganigrama() {
+  const modal = document.getElementById("organigramaModal");
+  modal.classList.toggle("active");
+}
+function toggleOrganigrama(){
+  const modal = document.getElementById("organigramaModal");
+  modal.classList.toggle("active");
+}
+
+// efecto glow suave dinámico
+document.querySelectorAll(".org-item").forEach(item => {
+  item.addEventListener("mousemove", () => {
+    item.style.transform = "translateY(-6px) scale(1.03)";
+  });
+
+  item.addEventListener("mouseleave", () => {
+    item.style.transform = "";
+  });
+});
